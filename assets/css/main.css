@@ -1,0 +1,130 @@
+body {
+  background: no-repeat center center fixed url('../../assets/images/bridges.jpeg');
+  background-color: #332f32;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  font-family: "Josefin Sans", "Tahoma", "sans-serif";
+}
+
+.background-vid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url('../../assets/images/bridges.jpeg') no-repeat;
+  background-size: cover;
+}
+
+.grey-transparent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.70);
+  color: rgba(255,255,255,0.80);
+  width: 100%;
+  height: 100%;
+}
+
+.inside {
+  margin: 0 15% 0 15%;
+}
+
+.inside h1 {
+  font-size: 60pt;
+  text-align: center;
+}
+
+.inside h2 {
+  font-size: 40pt;
+  text-align: center;
+}
+
+.inside h3 {
+  text-align: center;
+}
+
+.inside p {
+  text-align: center;
+}
+
+.broken-square {
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+  margin: 2% 0 0 4%;
+  border-right-style: none;
+  white-space: nowrap;
+
+  background: linear-gradient(to bottom, currentColor 0%, currentColor 50%, transparent 50%, transparent 100%) repeat-y top right;
+  background-size: 2px 70px;
+}
+
+.broken-square-inside {
+  line-height: 75pt;
+  margin: 0 0 0 25%;
+  font-size: 19pt;
+}
+
+footer {
+  font-size: 8pt;
+  font-family: "Josefin Sans", "Tahoma", "sans-serif";
+  position: absolute;
+  top: 98%;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(32,178,180);
+}
+
+a:hover {
+  color: rgba(255, 255, 240,0.70);
+}
+
+
+@media only screen and (max-device-width: 680px) {
+  body {
+    font-size: 200%;
+  }
+
+  .dot:before, .dot:after {
+    content: ' ';
+    clear: right;
+    display: block;
+  }
+
+  .broken-square {
+    border: 6px solid white;
+    width: 200px;
+    height: 200px;
+    margin: 10% 0 0 10%;
+    border-right-style: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, currentColor 0%, currentColor 50%, transparent 50%, transparent 100%) repeat-y top right;
+    background-size: 6px 140px;
+  }
+
+  .broken-square-inside {
+    line-height: 150pt;
+    margin: 0 0 0 50%;
+    font-size: 60pt;
+  }
+
+  .company-name {
+    display: none
+  }
+}
